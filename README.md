@@ -187,7 +187,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git git@github.com:fickryiman/ToDo-List.git
+  git git@github.com:fickryiman/Leaderboard.git
 ```
 
 
@@ -231,7 +231,7 @@ You can deploy this project using:
 GitHub Pages
 Example:
 ```sh
-https://fickryiman.github.io/ToDo-List/
+https://fickryiman.github.io/Leaderboard/
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -265,7 +265,7 @@ https://fickryiman.github.io/ToDo-List/
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [https://github.com/fickryiman/ToDo-List/issues](../../issues/).
+Feel free to check the [https://github.com/fickryiman/Leaderboard/issues](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
