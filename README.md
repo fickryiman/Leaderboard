@@ -52,6 +52,7 @@ In this activity will set up a JavaScript project for the Leaderboard list app, 
 - Documentation the project in a professional way on README file.
 - Create an npm project with webpack.
 - Write plain HTML markup with minimum styling (just to make the layout), because you will implement styles in the following steps. Use this wireframe as a guide:
+  
   [![wireframe intro](https://github.com/fickryiman/Leaderboard/blob/development/images/leaderboard_wireframe.png)
 
 - Don't make API calls (I'll do it in a following step).
@@ -73,6 +74,7 @@ In this activity I will continue working on the Leaderboard list app, sending an
 In this activity you will finalize the Leaderboard list app, adding the styles needed to make it look great.
 
 - At this point you should have a fully working app that uses only basic styles to make the layout work, according to this wireframe:
+  
   [![wireframe intro](https://github.com/fickryiman/Leaderboard/blob/development/images/leaderboard_wireframe.png)
   
 - Now I should improve the look and feel of the application, adding the styles of my choice.
