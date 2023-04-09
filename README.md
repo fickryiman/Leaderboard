@@ -1,7 +1,7 @@
 # Leaderboard
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service (https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 
-<a name="readme-top">The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service (https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).</a>
+<!-- <a name="readme-top">The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service (https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).</a> -->
 
 <h1>Leaderboard</h1>
 
@@ -48,6 +48,8 @@ The leaderboard website displays scores submitted by different players. It also 
 In this activity will set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. I should develop a first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, I will consume the Leaderboard API using JavaScript async and await and add some styling.
 
 - Write plain HTML markup with minimum styling (just to make the layout), because you will implement styles in the following steps. Use this wireframe as a guide:
+
+[![wireframe intro](https://github.com/fickryiman/Leaderboard/blob/development/images/leaderboard_wireframe.png)
 
 
 - Set up a new project with webpack that is based on the webpack exercise you have already completed.
