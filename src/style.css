@@ -58,5 +58,80 @@ h6 {
 }
 
 .container {
+  margin: 20px 30px;
+}
+
+.container-score {
+  margin: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.scores-list {
+  min-width: 250px;
+}
+
+.scores-list-header {
   display: flex;
 }
+
+.recent-scores {
+  margin-right: 20px;
+}
+
+.refresh-button {
+  height: min-content;
+  font-size: 0.8em;
+  align-self: center;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.705);
+  cursor: pointer;
+}
+
+.scores-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scores-list-data {
+  border: 2px solid black;
+}
+
+.datas {
+  padding-left: 0;
+}
+
+.data {
+  list-style: none;
+  padding-left: 10px;
+  text-align: left;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(255, 255, 255);
+}
+li:nth-child(even) {
+  background-color: rgb(226, 226, 226);
+}
+
+.input-score {
+  min-width: 250px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input[type=submit] {
+  width: fit-content;
+  height: min-content;
+  align-self: flex-end;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.705);
+  margin-right: 3px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
