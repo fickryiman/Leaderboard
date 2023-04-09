@@ -24,7 +24,6 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #f6f6f6;
   font-family: 'Balsamiq Sans', sans-serif;
-  /* text-align: center; */
 }
 
 img,
@@ -56,4 +55,8 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.container {
+  display: flex;
 }
