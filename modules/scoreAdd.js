@@ -1,7 +1,7 @@
 const ScoreAdd = {
   renderScoreAdd: () => {
-    const input_score = document.querySelector('.input-score');
-    input_score.innerHTML = `
+    const inputScore = document.querySelector('.input-score');
+    inputScore.innerHTML = `
       <h2>Add your score</h2>
       <div>
         <form action="" class="form-input">
@@ -10,8 +10,8 @@ const ScoreAdd = {
           <input type="submit" value="Submit">
         </form>
       </div>
-    `
-  }
+    `;
+  },
 };
 
 export default ScoreAdd;

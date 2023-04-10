@@ -1,7 +1,7 @@
 const Scores = {
   renderScores: () => {
-    const scores_list = document.querySelector('.scores-list');
-    scores_list.innerHTML = `
+    const scoresList = document.querySelector('.scores-list');
+    scoresList.innerHTML = `
       <div class="scores-list-header">
         <h2 class="recent-scores">Recent Scores</h2>
         <button class="refresh-button" onclick="location.reload()">Refresh</button>
@@ -17,8 +17,8 @@ const Scores = {
           <li class="data">Name: 42</li>
         </ul>
       </div>
-    `
-  }
+    `;
+  },
 };
 
 export default Scores;
