@@ -73,6 +73,9 @@ h6 {
 
 .scores-list {
   min-width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .scores-list-header {
@@ -89,12 +92,6 @@ h6 {
   align-self: center;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.705);
   cursor: pointer;
-}
-
-.scores-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .scores-list-data {
@@ -138,4 +135,3 @@ input[type=submit] {
   font-size: 0.9em;
   cursor: pointer;
 }
-
