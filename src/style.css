@@ -111,6 +111,7 @@ h6 {
 li:nth-child(odd) {
   background-color: rgb(255, 255, 255);
 }
+
 li:nth-child(even) {
   background-color: rgb(226, 226, 226);
 }
