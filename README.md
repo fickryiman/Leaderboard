@@ -163,7 +163,7 @@ In this activity you will finalize the Leaderboard list app, adding the styles n
 ## 🚀 Live Demo <a name=""></a>
 
 <!-- > Add a link to your deployed project. -->
-- Click the following url for [... Live Demo ...](https://fickryiman.github.io/Leaderboard/)
+- Click the following url for [... Live Demo ...](https://fickryiman.github.io/Leaderboard/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
