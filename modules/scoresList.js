@@ -6,7 +6,7 @@ const Scores = {
         'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hs3Uvn8oXxiNOYVsoXdL/scores/',
         {
           method: 'GET',
-        }
+        },
       );
 
       if (!response.ok) {
@@ -14,20 +14,16 @@ const Scores = {
       }
       const data = await response.json();
       return data;
-    };
+    }
 
-    getResponse().then(data => {
-      console.log(data.result)
-      let scoresData = data.result;
+    getResponse().then((data) => {
+      const scoresData = data.result;
       // sort by score
-      scoresData.sort((a, b) => {
-        return b.score - a.score;
-      });
-      datas.innerHTML = scoresData.map(game => `
+      scoresData.sort((a, b) => b.score - a.score);
+      datas.innerHTML = scoresData.map((game) => `
         <li class="data">${game.user}: ${game.score}</li>
       `).join('');
     });
-    
   },
 };
 
