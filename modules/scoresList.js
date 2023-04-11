@@ -1,7 +1,7 @@
 const datas = document.querySelector('.datas');
 const Scores = {
   renderScores: () => {
-    const getResponse = async() => {
+    const getResponse = async () => {
       const response = await fetch(
         'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hs3Uvn8oXxiNOYVsoXdL/scores/',
         {
@@ -14,7 +14,7 @@ const Scores = {
       }
       const data = await response.json();
       return data;
-    }
+    };
 
     getResponse().then((data) => {
       const scoresData = data.result;
