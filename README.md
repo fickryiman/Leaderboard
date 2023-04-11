@@ -241,7 +241,7 @@ https://fickryiman.github.io/Leaderboard/
 
 <!-- > Mention all of the collaborators of this project. -->
 
-👤 **Author 1**
+👤 **Author: Fickry Bil Iman**
 
 - GitHub: [@fickryiman](https://github.com/fickryiman)
 - Facebook: [@fickry.bil.iman](https://www.facebook.com/fickry.bil.iman)
