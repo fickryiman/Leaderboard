@@ -255,8 +255,6 @@ https://fickryiman.github.io/Leaderboard/
 <!-- > Describe 1 - 3 features you will add to the project. -->
 - add login to user with social media auth or google auth
 - create mobile version
-<!-- - create time completion and alarm
-- Store data to realtime database -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
