@@ -2,5 +2,8 @@ import './style.css';
 import Scores from '../modules/scoresList.js';
 import ScoreAdd from '../modules/scoreAdd.js';
 
-document.addEventListener('DOMContentLoaded', Scores.renderScores);
+const refreshButton = document.querySelector('.refresh-button');
+
+refreshButton.addEventListener('click', Scores.renderScores);
+
 document.addEventListener('DOMContentLoaded', ScoreAdd.renderScoreAdd);

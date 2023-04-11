@@ -1,23 +1,30 @@
+const datas = document.querySelector('.datas');
 const Scores = {
   renderScores: () => {
-    const scoresList = document.querySelector('.scores-list');
-    scoresList.innerHTML = `
-      <div class="scores-list-header">
-        <h2 class="recent-scores">Recent Scores</h2>
-        <button class="refresh-button" onclick="location.reload()">Refresh</button>
-      </div>
-      <div class="scores-list-data">
-        <ul class="datas">
-          <li class="data">Name: 100</li>
-          <li class="data">Name: 20</li>
-          <li class="data">Name: 50</li>
-          <li class="data">Name: 78</li>
-          <li class="data">Name: 125</li>
-          <li class="data">Name: 77</li>
-          <li class="data">Name: 42</li>
-        </ul>
-      </div>
-    `;
+    const getDataFromAPI = new Promise((resolve, reject) => {
+      let request = new XMLHttpRequest();
+      request.open('GET', "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hs3Uvn8oXxiNOYVsoXdL/scores/");
+      request.onload = () => {
+        if (request.status === 200) {
+          resolve(request.response);
+        } else {
+          reject("File not Found");
+        }
+      };
+      request.send();
+    });
+
+    getDataFromAPI.then((value) => {
+      let scoresData = JSON.parse(value).result;
+      scoresData.sort((a, b) => {
+        return b.score - a.score;
+      })
+      datas.innerHTML = scoresData.map((scoreData, index) => `
+        <li class="data">${scoreData.user}: ${scoreData.score}</li>
+      `).join('');
+    });
+    
+
   },
 };
 
