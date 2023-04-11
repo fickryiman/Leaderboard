@@ -1,30 +1,33 @@
 const datas = document.querySelector('.datas');
 const Scores = {
   renderScores: () => {
-    const getDataFromAPI = new Promise((resolve, reject) => {
-      let request = new XMLHttpRequest();
-      request.open('GET', "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hs3Uvn8oXxiNOYVsoXdL/scores/");
-      request.onload = () => {
-        if (request.status === 200) {
-          resolve(request.response);
-        } else {
-          reject("File not Found");
+    async function getResponse() {
+      const response = await fetch(
+        'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hs3Uvn8oXxiNOYVsoXdL/scores/',
+        {
+          method: 'GET',
         }
-      };
-      request.send();
-    });
+      );
 
-    getDataFromAPI.then((value) => {
-      let scoresData = JSON.parse(value).result;
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    };
+
+    getResponse().then(data => {
+      console.log(data.result)
+      let scoresData = data.result;
+      // sort by score
       scoresData.sort((a, b) => {
         return b.score - a.score;
-      })
-      datas.innerHTML = scoresData.map((scoreData, index) => `
-        <li class="data">${scoreData.user}: ${scoreData.score}</li>
+      });
+      datas.innerHTML = scoresData.map(game => `
+        <li class="data">${game.user}: ${game.score}</li>
       `).join('');
     });
     
-
   },
 };
 
