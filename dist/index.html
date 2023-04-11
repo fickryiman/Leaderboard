@@ -4,10 +4,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Leaderboard</title>
+  <link rel="stylesheet" href="style.css">
 <script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
 <body>
-  
+  <div class="container">
+    <h1 class="apps-title">Leaderboard</h1>
+    <div class="container-score">
+      <section class="scores-list">
+        <div class="scores-list-header">
+          <h2 class="recent-scores">Recent Scores</h2>
+          <button class="refresh-button">Refresh</button>
+        </div>
+        <div class="scores-list-data">
+          <ul class="datas">
+            <li class="data">Name: 100</li>
+            <li class="data">Name: 20</li>
+            <li class="data">Name: 50</li>
+            <li class="data">Name: 78</li>
+            <li class="data">Name: 125</li>
+            <li class="data">Name: 77</li>
+            <li class="data">Name: 42</li>
+          </ul>
+        </div>
+      </section>
+      <section class="input-score">
+        <h2>Add your score</h2>
+        <div>
+          <form action="" class="form-input">
+            <input type="text" name="name" id="" placeholder="Your name">
+            <input type="text" name="score" id="" placeholder="Your score">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
 </body>
 </html>

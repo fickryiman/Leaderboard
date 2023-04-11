@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*
   Josh's Custom CSS Reset
@@ -23,8 +23,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #f6f6f6;
-  font-family: 'Nunito Sans', sans-serif;
-  text-align: center;
+  font-family: 'Balsamiq Sans', sans-serif;
 }
 
 img,
@@ -56,4 +55,84 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.container {
+  margin: 20px 30px;
+}
+
+.apps-title {
+  font-size: 40px;
+}
+
+.container-score {
+  margin: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.scores-list {
+  min-width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scores-list-header {
+  display: flex;
+}
+
+.recent-scores {
+  margin-right: 20px;
+}
+
+.refresh-button {
+  height: min-content;
+  font-size: 0.8em;
+  align-self: center;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.705);
+  cursor: pointer;
+}
+
+.scores-list-data {
+  border: 2px solid black;
+}
+
+.datas {
+  padding-left: 0;
+}
+
+.data {
+  list-style: none;
+  padding-left: 10px;
+  text-align: left;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(255, 255, 255);
+}
+
+li:nth-child(even) {
+  background-color: rgb(226, 226, 226);
+}
+
+.input-score {
+  min-width: 250px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input[type=submit] {
+  width: fit-content;
+  height: min-content;
+  align-self: flex-end;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.705);
+  margin-right: 3px;
+  font-size: 0.9em;
+  cursor: pointer;
 }
