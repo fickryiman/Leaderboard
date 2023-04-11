@@ -1,23 +1,29 @@
+const datas = document.querySelector('.datas');
 const Scores = {
   renderScores: () => {
-    const scoresList = document.querySelector('.scores-list');
-    scoresList.innerHTML = `
-      <div class="scores-list-header">
-        <h2 class="recent-scores">Recent Scores</h2>
-        <button class="refresh-button" onclick="location.reload()">Refresh</button>
-      </div>
-      <div class="scores-list-data">
-        <ul class="datas">
-          <li class="data">Name: 100</li>
-          <li class="data">Name: 20</li>
-          <li class="data">Name: 50</li>
-          <li class="data">Name: 78</li>
-          <li class="data">Name: 125</li>
-          <li class="data">Name: 77</li>
-          <li class="data">Name: 42</li>
-        </ul>
-      </div>
-    `;
+    const getResponse = async () => {
+      const response = await fetch(
+        'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hs3Uvn8oXxiNOYVsoXdL/scores/',
+        {
+          method: 'GET',
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    };
+
+    getResponse().then((data) => {
+      const scoresData = data.result;
+      // sort by score
+      scoresData.sort((a, b) => b.score - a.score);
+      datas.innerHTML = scoresData.map((game) => `
+        <li class="data">${game.user}: ${game.score}</li>
+      `).join('');
+    });
   },
 };
 

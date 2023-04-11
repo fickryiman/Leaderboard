@@ -163,7 +163,7 @@ In this activity you will finalize the Leaderboard list app, adding the styles n
 ## 🚀 Live Demo <a name=""></a>
 
 <!-- > Add a link to your deployed project. -->
-- Click the following url for [... Live Demo ...](https://fickryiman.github.io/Leaderboard/)
+- Click the following url for [... Live Demo ...](https://fickryiman.github.io/Leaderboard/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -241,7 +241,7 @@ https://fickryiman.github.io/Leaderboard/
 
 <!-- > Mention all of the collaborators of this project. -->
 
-👤 **Author 1**
+👤 **Fickry Bil Iman**
 
 - GitHub: [@fickryiman](https://github.com/fickryiman)
 - Facebook: [@fickry.bil.iman](https://www.facebook.com/fickry.bil.iman)
@@ -255,8 +255,6 @@ https://fickryiman.github.io/Leaderboard/
 <!-- > Describe 1 - 3 features you will add to the project. -->
 - add login to user with social media auth or google auth
 - create mobile version
-<!-- - create time completion and alarm
-- Store data to realtime database -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

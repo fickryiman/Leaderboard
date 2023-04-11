@@ -18,22 +18,16 @@
         </div>
         <div class="scores-list-data">
           <ul class="datas">
-            <li class="data">Name: 100</li>
-            <li class="data">Name: 20</li>
-            <li class="data">Name: 50</li>
-            <li class="data">Name: 78</li>
-            <li class="data">Name: 125</li>
-            <li class="data">Name: 77</li>
-            <li class="data">Name: 42</li>
+            <!-- dynamic load from scoresList.js-->
           </ul>
         </div>
       </section>
       <section class="input-score">
         <h2>Add your score</h2>
         <div>
-          <form action="" class="form-input">
-            <input type="text" name="name" id="" placeholder="Your name">
-            <input type="text" name="score" id="" placeholder="Your score">
+          <form action="" class="form-input" method="POST">
+            <input type="text" name="user" id="user" placeholder="Your name" required>
+            <input type="text" name="score" id="score" placeholder="Your score" required>
             <input type="submit" value="Submit">
           </form>
         </div>
