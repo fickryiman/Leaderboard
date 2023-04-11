@@ -7,7 +7,6 @@ const formInput = document.querySelector('.form-input');
 
 refreshButton.addEventListener('click', Scores.renderScores);
 
-// document.addEventListener('DOMContentLoaded', ScoreAdd.renderScoreAdd);
 formInput.addEventListener('submit', (e) => {
   e.preventDefault();
   const user = document.getElementById('user').value;
