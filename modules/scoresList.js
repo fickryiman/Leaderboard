@@ -21,7 +21,10 @@ const Scores = {
       // sort by score
       scoresData.sort((a, b) => b.score - a.score);
       datas.innerHTML = scoresData.map((game) => `
-        <li class="data">${game.user}: ${game.score}</li>
+        <li class="data">
+          <span class="game-user">${game.user}</span>
+          <span class="game-score">${game.score}</span>
+        </li>
       `).join('');
     });
   },
