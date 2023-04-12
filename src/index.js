@@ -10,7 +10,7 @@ refreshButton.addEventListener('click', Scores.renderScores);
 formInput.addEventListener('submit', (e) => {
   e.preventDefault();
   const user = document.getElementById('user').value;
-  const score = document.getElementById('score').value;
+  const score = +(document.getElementById('score').value);
 
   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hs3Uvn8oXxiNOYVsoXdL/scores/', {
     method: 'POST',
