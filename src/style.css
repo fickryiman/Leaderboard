@@ -91,7 +91,7 @@ h6 {
   font-size: 0.8em;
   align-self: center;
   box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.805);
-  background: rgb(92, 235, 227);;
+  background: rgb(92, 235, 227);
   cursor: pointer;
   outline: none;
   letter-spacing: 0.2px;
@@ -122,9 +122,6 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
-
-.game-user {}
-.game-score {}
 
 li:nth-child(odd) {
   background-color: rgb(93, 87, 87);
