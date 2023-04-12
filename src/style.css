@@ -87,11 +87,24 @@ h6 {
 }
 
 .refresh-button {
-  height: min-content;
+  height: max-content;
   font-size: 0.8em;
   align-self: center;
-  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.705);
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.805);
+  background: rgb(92, 235, 227);
   cursor: pointer;
+  outline: none;
+  letter-spacing: 0.2px;
+}
+
+.refresh-button:hover {
+  background: rgb(235, 200, 111);
+}
+
+.refresh-button:active {
+  background: rgb(235, 200, 111);
+  box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.705);
+  transform: translateY(4px);
 }
 
 .scores-list-data {
@@ -104,16 +117,20 @@ h6 {
 
 .data {
   list-style: none;
-  padding-left: 10px;
+  padding: 1.5px 15px;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 li:nth-child(odd) {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(93, 87, 87);
+  color: blanchedalmond;
 }
 
 li:nth-child(even) {
-  background-color: rgb(226, 226, 226);
+  background-color: blanchedalmond;
+  color: rgb(70, 69, 69);
 }
 
 .input-score {
@@ -127,12 +144,35 @@ li:nth-child(even) {
   margin-top: 10px;
 }
 
+input[type=text] {
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(238, 143, 143, 0.758);
+}
+
+::placeholder {
+  color: rgba(141, 139, 234, 0.851);
+  font-size: 0.9em;
+  padding-left: 1px;
+}
+
 input[type=submit] {
   width: fit-content;
   height: min-content;
   align-self: flex-end;
-  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.705);
+  background: rgb(115, 213, 169);
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.805);
   margin-right: 3px;
   font-size: 0.9em;
   cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background: rgb(213, 115, 169);
+}
+
+input[type=submit]:active {
+  background: rgb(213, 115, 169);
+  box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.705);
+  transform: translateY(4px);
 }
