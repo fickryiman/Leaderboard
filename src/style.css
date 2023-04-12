@@ -87,7 +87,7 @@ h6 {
 }
 
 .refresh-button {
-  height: fit-content;
+  height: max-content;
   font-size: 0.8em;
   align-self: center;
   box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.805);
@@ -145,6 +145,18 @@ li:nth-child(even) {
   flex-direction: column;
   gap: 10px;
   margin-top: 10px;
+}
+
+input[type=text] {
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(238, 143, 143, 0.758);
+}
+
+::placeholder {
+  color: rgba(141, 139, 234, 0.851);
+  font-size: 0.9em;
+  padding-left: 1px;
 }
 
 input[type=submit] {
